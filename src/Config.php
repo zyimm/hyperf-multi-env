@@ -4,8 +4,6 @@ namespace Zyimm\HyperfMultiEnv;
 
 use Dotenv\Dotenv;
 use Dotenv\Repository\RepositoryBuilder;
-use Hyperf\Config\ProviderConfig;
-use Symfony\Component\Finder\Finder;
 use Dotenv\Repository\Adapter;
 
 class Config
