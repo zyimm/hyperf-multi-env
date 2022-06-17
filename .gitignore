@@ -1,0 +1,10 @@
+*.cache
+*.log
+.buildpath
+.settings/
+.project
+*.patch
+.idea
+.DS_Store
+vendor/
+composer.lock

@@ -12,5 +12,9 @@
             "email": "zyimm@qq.com"
         }
     ],
-    "require": {}
+    "require": {
+        "hyperf/event": "^2.2",
+        "hyperf/framework": "^2.2",
+        "vlucas/phpdotenv": "^5.4"
+    }
 }
