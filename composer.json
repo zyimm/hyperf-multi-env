@@ -1,0 +1,16 @@
+{
+    "name": "zyimm/hyperf-multi-env",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Zyimm\\HyperfMultiEnv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zyimm",
+            "email": "zyimm@qq.com"
+        }
+    ],
+    "require": {}
+}
