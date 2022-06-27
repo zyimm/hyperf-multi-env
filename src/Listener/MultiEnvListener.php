@@ -35,7 +35,7 @@ class MultiEnvListener implements ListenerInterface
     {
         $env      = env('APP_ENV');
         $env_path = BASE_PATH.'/.env.'.$env;
-        if ($event instanceof BootApplication && $env !== null) {
+        if ($env !== null && $event instanceof BootApplication) {
             if (file_exists($env_path) && ApplicationContext::hasContainer()) {
                 (ApplicationContext::getContainer())->get(Config::class);
             }
