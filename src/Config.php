@@ -17,7 +17,7 @@ class Config
 
     public function get()
     {
-        // Load env before config.
+        // 加载env
         if (file_exists(BASE_PATH . '/.env.' . $this->env)) {
             $repository = RepositoryBuilder::createWithNoAdapters()
                 ->addReader(Adapter\PutenvAdapter::class)
