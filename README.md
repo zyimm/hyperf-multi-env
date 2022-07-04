@@ -1,3 +1,20 @@
 # hyperf-multi-env
 hyperf 多环境变量共存
 # 安装
+```
+composer require zyimm/hyperf-multi-env
+
+```
+
+# 使用
+
+1. 同级.env 指定APP_ENV环境变量 比如APP_ENV=test 
+2. 同级.env 建立与之匹配.env.test
+3. 程序通过env()获取
+
+# 注意
+组件原理本质是监听框架BootApplication事件，该事件启动之后框架本身.env已经被加载，所以建议：
+
+1. .env 保存公共环境变量
+2. .env.xx 避免与.env冲突
+3. 即使指定APP_ENV=test .env.test不存在亦不会报错影响程序运行
