@@ -12,6 +12,11 @@
             "email": "zyimm@qq.com"
         }
     ],
+    "extra": {
+        "hyperf": {
+            "config": "Zyimm\\HyperfMultiEnv\\ConfigProvider"
+        }
+    },
     "require": {
         "hyperf/event": "^2.2",
         "hyperf/framework": "^2.2",
