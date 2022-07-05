@@ -13,7 +13,7 @@ composer require zyimm/hyperf-multi-env
 3. 程序通过env()获取
 
 # 注意
-组件原理本质是监听框架BootApplication事件，该事件启动之后框架本身.env已经被加载，所以建议：
+组件原理本质是监听框架BootApplication事件，该事件触发之前框架本身的.env和config已经被加载，所以要再次替换config中所用env相关配置。因而如下建议&须知：
 
 1. .env 保存公共环境变量
 2. .env.xx 避免与.env冲突
