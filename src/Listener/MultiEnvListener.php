@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Zyimm\HyperfMultiEnv\Listener;
 
+use Hyperf\Contract\ConfigInterface;
 use Hyperf\Event\Annotation\Listener;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
@@ -37,7 +38,10 @@ class MultiEnvListener implements ListenerInterface
         $env_path = BASE_PATH.'/.env.'.$env;
         if ($env !== null && $event instanceof BootApplication) {
             if (file_exists($env_path) && ApplicationContext::hasContainer()) {
-                (ApplicationContext::getContainer())->get(Config::class);
+                (ApplicationContext::getContainer())->make(Config::class, [
+                    $env,
+                    di(ConfigInterface::class)
+                ])->get();
             }
         }
     }
