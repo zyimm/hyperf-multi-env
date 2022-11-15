@@ -12,6 +12,7 @@
             "email": "zyimm@qq.com"
         }
     ],
+    "description":"hyperf 多环境变量共存",
     "extra": {
         "hyperf": {
             "config": "Zyimm\\HyperfMultiEnv\\ConfigProvider"
