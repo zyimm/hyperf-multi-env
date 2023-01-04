@@ -19,8 +19,10 @@
         }
     },
     "require": {
-        "hyperf/event": "^2.2",
-        "hyperf/framework": "^2.1|2.2",
-        "vlucas/phpdotenv": "^5.4"
+        "php":">=8.0",
+        "hyperf/event": "~3.0.0",
+        "hyperf/framework": "~3.0.0",
+        "vlucas/phpdotenv": "^5.4",
+        "hyperf/config": "dev-master"
     }
 }

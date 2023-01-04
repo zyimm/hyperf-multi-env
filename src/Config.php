@@ -37,7 +37,12 @@ class Config
         }
     }
 
-    public function update()
+    /**
+     * update
+     *
+     * @return void
+     */
+    public function update(): void
     {
         $base       = $this->read($this->configPath.'config.php');
         $server     = $this->read($this->configPath.'server.php');
@@ -48,6 +53,13 @@ class Config
         }
     }
 
+    /**
+     * read
+     *
+     * @param string $config_path
+     *
+     * @return array
+     */
     private function read(string $config_path): array
     {
         $config = [];
@@ -57,7 +69,14 @@ class Config
         return is_array($config) ? $config : [];
     }
 
-    private function scan(array $paths)
+    /**
+     * scan
+     *
+     * @param array $paths
+     *
+     * @return array
+     */
+    private function scan(array $paths): array
     {
         $configs = [];
         $finder  = new Finder();
