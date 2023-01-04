@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Zyimm\HyperfMultiEnv\Listener;
 
 use Hyperf\Contract\ConfigInterface;
+
 use Hyperf\Event\Annotation\Listener;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
@@ -13,9 +14,9 @@ use Psr\Container\NotFoundExceptionInterface;
 use Zyimm\HyperfMultiEnv\Config;
 
 /**
- * @Listener
  * Class MultiEnvListener
  */
+#[Listener]
 class MultiEnvListener implements ListenerInterface
 {
     public function listen(): array
@@ -31,8 +32,9 @@ class MultiEnvListener implements ListenerInterface
      * @param  object  $event
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
+     * @return void
      */
-    public function process(object $event)
+    public function process(object $event):void
     {
         $env      = env('APP_ENV');
         $env_path = BASE_PATH.'/.env.'.$env;
