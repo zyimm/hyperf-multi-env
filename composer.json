@@ -23,6 +23,6 @@
         "hyperf/event": "~3.0.0",
         "hyperf/framework": "~3.0.0",
         "vlucas/phpdotenv": "^5.4",
-        "hyperf/config": "dev-master"
+        "hyperf/config": "~3.0.0"
     }
 }
