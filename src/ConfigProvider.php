@@ -13,14 +13,14 @@ class ConfigProvider
         return [
             'dependencies' => [
             ],
-            'commands' => [
+            'commands'     => [
             ],
-            'listener' => [
+            'listener'     => [
                 MultiEnvListener::class,
             ],
-            'annotations' => [
+            'annotations'  => [
                 'scan' => [
-                    'paths' => [
+                    'paths'              => [
                         __DIR__,
                     ],
                     'ignore_annotations' => [
@@ -28,7 +28,7 @@ class ConfigProvider
                     ],
                 ],
             ],
-            'publish' => [
+            'publish'      => [
             ]
         ];
     }

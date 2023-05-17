@@ -24,7 +24,7 @@ class Config
         $this->config = $config;
     }
 
-    public function get()
+    public function get(): void
     {
         // 加载env
         if (file_exists(BASE_PATH.'/.env.'.$this->env)) {
