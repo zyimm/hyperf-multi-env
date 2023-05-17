@@ -3,7 +3,6 @@ hyperf 多环境变量共存 支持hyperf3.0
 # 安装
 ```
 composer require zyimm/hyperf-multi-env
-
 ```
 
 # 使用
