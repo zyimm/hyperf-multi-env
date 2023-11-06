@@ -9,7 +9,9 @@
     "authors": [
         {
             "name": "zyimm",
-            "email": "zyimm@qq.com"
+            "email": "zyimm@qq.com",
+            "homepage": "https://www.zyimm.com",
+            "role": "Developer"
         }
     ],
     "description":"hyperf 多环境变量共存",
