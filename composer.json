@@ -22,10 +22,10 @@
     },
     "require": {
         "php":">=8.0",
-        "hyperf/event": "~3.0.0",
-        "hyperf/framework": "~3.0.16",
+        "hyperf/event": "~3.1.0",
+        "hyperf/framework": "~3.1.0",
         "vlucas/phpdotenv": "^5.4",
-        "hyperf/config": "~3.0.0"
+        "hyperf/config": "~3.1.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10"
