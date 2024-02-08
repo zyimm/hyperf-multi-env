@@ -12,6 +12,7 @@ use Hyperf\Framework\Event\BootApplication;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use Zyimm\HyperfMultiEnv\Config;
+use function Hyperf\Support\env;
 
 /**
  * Class MultiEnvListener
@@ -36,7 +37,7 @@ class MultiEnvListener implements ListenerInterface
      */
     public function process(object $event):void
     {
-        $env      = \Hyperf\Support\env('APP_ENV');
+        $env      = env('APP_ENV');
         $env_path = BASE_PATH.'/.env.'.$env;
         if ($env !== null && $event instanceof BootApplication) {
             if (file_exists($env_path) && ApplicationContext::hasContainer()) {
