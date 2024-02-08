@@ -21,8 +21,8 @@ composer require zyimm/hyperf-multi-env
 
 # 版本约定
 
-Hyperf 框架版本在3.0及以下，请安装1.x版本。（已不维护）
+⚠️Hyperf 框架版本在3.0及以下，请安装1.x版本。（已不维护）
 
-Hyperf 框架版本在3.0，请安装2.0.x版本。（已不维护）
+⚠️Hyperf 框架版本在3.0，请安装2.0.x版本。（已不维护）
 
 Hyperf 框架版本在3.1及以上，请安装2.1.x版本。（维护中）
